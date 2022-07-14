@@ -1,0 +1,75 @@
+* {
+      padding: 0;
+      margin: 0;
+}
+
+body {
+    background-color: rgb(226, 210, 183);
+}
+
+.container {
+    /* background-color: aqua; */
+    width: 90%;
+    margin: auto; 
+    padding-top: 110px;
+    display: flex;
+}
+
+.left-container, .right-container {
+    flex-basis: 50%;
+}
+
+.left-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, 0.5fr));
+    grid-gap: 30px;
+}
+
+.right-container {
+    width: 50%;
+    text-align: center;
+    color: brown;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+}
+.right-container img{
+    height: 180px;
+    margin: 10px;
+}
+
+.pokicard {
+    width: 250px;
+    background-color: rgb(87, 226, 69);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.493);
+}
+.pokicard h1 {
+    font-size: 25px;
+    color: black
+}
+.btn {
+    display: flex;
+}
+
+.btn button {
+    width: 160px;
+    padding: 12px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(87, 226, 70);
+    color: rgb(16, 69, 116);
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.btn button:hover {
+    background-color: black;
+    color: white;
+}
